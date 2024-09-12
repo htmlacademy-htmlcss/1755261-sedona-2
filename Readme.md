@@ -2,7 +2,7 @@
 
 * Студент: [Veronika](https://up.htmlacademy.ru/htmlcss-individual/2/user/1755261).
 * Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
-
+* Сайт: [Мой сайт Седона](https://veraya1.github.io/1755261-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
