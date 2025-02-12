@@ -9,6 +9,8 @@
 
   <body>
 
+    <div class="container">
+
     <header class="page-header">
       <a class="logo" href="index.html">
         <img src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны">
@@ -103,6 +105,7 @@
                 </li>
               </ul>
             </fieldset>
+            <div class="catalog-filter-pb">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, Р</legend>
               <ul class="catalog-filter-list">
@@ -117,10 +120,16 @@
                   </label>
                 </li>
               </ul>
+
+              <div class="test-input">
+                <button class="input-btn input-btn-1" type=" button"></button>
+                <button class="input-btn input-btn-2" type="button"></button>
+              </div>
             </fieldset>
             <div class="button-filter">
-              <button class="button button-blue" type="submit">Применить</button>
+              <button class="button button-blue catalog-form-btn" type="submit">Применить</button>
               <button class="button button-clear" type="reset">Сбросить</button>
+            </div>
             </div>
           </form>
         </header>
@@ -162,36 +171,42 @@
               <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Пещера на фоне звездного неба">
               <h3 class="hotel-card-title">Amara resort & Spa</h3>
             </a>
+            <div class="hotel-card-filter">
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-card-price">от 4000 ₽</span>
             <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
-            <button class="button" type="button">В избранное</button>
+            <button class="button" type="button button-blue">В избранное</button>
             <span class="visually-hidden">4 звезды</span>
             <span class="rating">Рейтинг: 8,2</span>
+            </div>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
               <img class="hotel-card-image" src="images/hotels/hotel-2.jpg"width="300" height="212" alt="Горы на фоне радуги">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
+            <div class="hotel-card-filter">
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-card-price">от 5000 ₽</span>
             <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
             <button class="button" type="button">В избранном</button>
             <span class="visually-hidden">4 звезды</span>
             <span class="rating">Рейтинг: 9,2</span>
+          </div>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
               <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Горы на фоне ясного неба">
               <h3 class="hotel-card-title">Desert Quaill Inn</h3>
             </a>
+            <div class="hotel-card-filter">
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-card-price">от 2500 ₽</span>
             <a class="hotel-card-button button button-brown" href="#">Подробнее</a>
             <button class="button" type="button">В избранное</button>
             <span class="visually-hidden">3 звезды</span>
             <span class="rating">Рейтинг: 6,9</span>
+            </div>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -234,8 +249,8 @@
         <h2 class="title-2">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, <br>честное бойскаутское!</br></p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+          <label for="newsletter-email"class="visually-hidden">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
             id="newsletter-email" required>
           <button class="button newsletter-button button-blue big" type="submit" value="Подписаться">
             Подписаться</button>
@@ -277,4 +292,5 @@
         </a>
       </section>
     </footer>
+  </div>
   </body>
