@@ -90,18 +90,18 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type_of_apartments" value="hotel"
+                      <input class="control-input" type="radio" name="type-of-apartments" value="hotel"
                         checked>Гостиница
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type_of_apartments" value="motel">Мотель
+                      <input class="control-input" type="radio" name="type-of-apartments" value="motel">Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type_of_apartments" value="apartments">Апартаменты
+                      <input class="control-input" type="radio" name="type-of-apartments" value="apartments">Апартаменты
                     </label>
                   </li>
                 </ul>
@@ -111,20 +111,20 @@
                   <legend class="catalog-filter-title">Стоимость, Р</legend>
                   <ul class="catalog-filter-price">
                     <li class="catalog-filter-item">
-                      <label class="control">
-
-                        <input class="control-input input-price" type="number" name="start_price" value="0"
+                      <label for="from" class="input-label">
+                        от
                       </label>
+                      <input class="control-input input-price" type="text" id="from" name="from" value="0">
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input input-price" type="number" name="end_price" value="9000">
+                      <label for="to" class="input-label">
+                        до
                       </label>
-
-                    </li>
+                        <input class="control-input input-price" type="text" id="to" name="to" value="9000">
+                  </li>
                   </ul>
                   <div class="filter-range">
-                    <button class="range-btn range-btn-1" type=" button"></button>
+                    <button class="range-btn range-btn-1" type="button"></button>
                     <button class="range-btn range-btn-2" type="button"></button>
                   </div>
                 </fieldset>
