@@ -141,6 +141,7 @@
           <header class="catalog-header">
             <h2 class="title-2 title-hotel">Найдено гостиниц:38
             </h2>
+            <div class="choose">
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="popular">Сначала популярные</option>
@@ -149,24 +150,23 @@
 
             <ul class="icons-list">
               <li class="icons-list-use">
-                <a href="#" class="icons-list-use-button">
-                  <span class="visually-hidden">Список</span>
+                <a href="catalog.html?view=tile" class="icons-list-use-button"
+                 aria-label="Список">
                 </a>
               </li>
               <li class="icons-list-use">
-                <a class="icons-list-use-button" href="#">
-                  <span class="visually-hidden">Крупные значки</span>
+                <a class="icons-list-use-button" href="catalog.html?view=card"
+                  aria-label="Крупные значки">
                 </a>
               </li>
               <li class="icons-list-use">
-                <a class="icons-list-use-button" href="#">
-                  <span class="visually-hidden">Мелкие значки</span>
+                <a class="icons-list-use-button" href="catalog.html?view=list"
+                aria-label="Мелкие значки">
                 </a>
               </li>
             </ul>
+            </div>
           </header>
-
-
 
           <ul class="hotel-list">
             <li class="hotel-card">
@@ -300,38 +300,27 @@
       </main>
 
       <footer class="page-footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="navigation-link" href="#" aria-label="ВКонтакте"></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="navigation-link" href="#" aria-label="Телеграм"></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="navigation-link" href="#" aria-label="Ютуб"></a>
+          </li>
+        </ul>
         </section>
 
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+        <section class="contacts" aria-label="Контакты">
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
 
-        <section class="partners">
-          <h2 class="visually-hidden">Партнеры</h2>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img src="images/logo-html.svg" width="113" height="33" alt="htmlacademy">
-          </a>
-        </section>
+        <a href="https://htmlacademy.ru/" aria-label="Перейти на страницу htmlacademy">
+          <img src="images/logo-html.svg" width="113" height="33" alt="htmlacademy">
+        </a>
+
       </footer>
     </div>
   </body>
