@@ -677,15 +677,15 @@ padding:0 20px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   column-gap: 20px;
+  row-gap: 16px;
 }
 
 .product-list-filter {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
-  margin: 0;
   padding: 0;
-  column-gap: 16px;
+ margin: 0;
   font-size: 18px;
 }
 
@@ -695,10 +695,11 @@ padding:0 20px;
   align-items: center;
   padding: 8px 6px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff
+  color: #333333;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
 }
@@ -706,16 +707,19 @@ padding:0 20px;
 .hotel-card-control[href] {
   color: #fff;
   background-color: #756157;
+  font-weight: 700;
 }
 
 .hotel-card-control[type="button"] {
   color: #fff;
   background-color: #82B3D3;
+  font-weight: 700;
 }
 
 .hotel-card-control.is-active {
   color: #fff;
   background-color: #7DB54F;
+  font-weight: 700;
 }
 
 .hotel-card-stars {
