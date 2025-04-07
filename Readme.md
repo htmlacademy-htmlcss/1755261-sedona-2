@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Veronika](https://up.htmlacademy.ru/htmlcss-individual/2/user/1755261).
-* Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
+* Наставник: [Сергей Новиков](https://htmlacademy.ru/profile/zombobombo).
 * Сайт: [Мой сайт Седона](https://veraya1.github.io/1755261-sedona-2/)
 ---
 
