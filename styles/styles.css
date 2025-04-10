@@ -178,6 +178,16 @@ padding: 8px 50px;
   text-decoration: none;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: nowrap;
@@ -434,6 +444,18 @@ padding:0 20px;
   width: 47px;
   height: 40px;
   margin-right: 13px;
+}
+
+.footer-social-link {
+  display: block;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 17px;
+}
+
+.footer-social-vk {
+  background-image: url("../images/vkontakte.svg");
 }
 
 .contacts-phone {
