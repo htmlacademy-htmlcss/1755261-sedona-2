@@ -105,6 +105,22 @@ body {
 padding: 8px 50px;
 }
 
+    .button:hover {
+      color: #fff;
+    }
+
+    .button:focus {
+      outline: 2px solid #68a2ca;
+
+    }
+
+    .button:active {
+    color: #fff;
+    opacity: 0.3;
+    }
+
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -816,11 +832,11 @@ height: 20px;
   padding: 0;
 }
 
-.hotel-card-stars. [data-stars-count="4"]
-.star-icon:not(:nth-child(-n + 4)),
-.hotel-card-stars[data-stars-count="4"] .star-icon:not(:nth-child(-n + 4)),
-.hotel-card-stars[data-stars-count="3"] .star-icon:not(:nth-child(-n + 3)),
-.hotel-card-stars[data-stars-count="2"] .star-icon:not(:nth-child(-n + 2)) {
+.hotel-card-stars [data-stars-count="5"] .star-icon: not(:nth-child(-n + 5)),
+.hotel-card-stars [data-stars-count="4"] .star-icon: not(:nth-child(-n + 4)),
+.hotel-card-stars [data-stars-count="3"] .star-icon: not(:nth-child(-n + 3)),
+.hotel-card-stars [data-stars-count="2"] .star-icon: not(:nth-child(-n + 2)),
+.hotel-card-stars [data-stars-count="1"] .star-icon: not(:nth-child(-n + 1)), {
   display: none;
 }
 
@@ -841,7 +857,8 @@ height: 20px;
   color: #333333;
   background-image: url("../images/arrow-big.svg");
   background-repeat: no-repeat;
-  background-position-x: calc(100% - 18px);
+  background-position: center;
+  background-size: 12px, 7px;
   border-radius: 4px;
   cursor: pointer;
 }
