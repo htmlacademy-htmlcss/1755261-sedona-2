@@ -71,6 +71,10 @@ body {
   cursor: pointer;
 }
 
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button:focus-visible {
   outline: none;
 }
@@ -103,7 +107,6 @@ body {
 }
 
 .button-brown:active {
-  color: rgba(255, 255, 255, 0,3);
   background-color: #745d5d;
 }
 
@@ -120,7 +123,6 @@ body {
 }
 
 .button-blue:active {
-  color: rgba(255, 255, 255, 0,3);
   background-color: #82b3d3;
 }
 
@@ -137,7 +139,6 @@ body {
 }
 
 .button-green:active {
-  color: rgba(255, 255, 255, 0,3);
   background-color: #7db54f;
 }
 
@@ -154,9 +155,6 @@ body {
   border: 3px solid #83b3d3;
 }
 
-.button-clear:active {
-  color: rgba(255, 255, 255, 0,3);
-}
 
 .button-blue.big {
   min-width: 232px;
@@ -542,12 +540,28 @@ height: 14px;
   height: 17px;
 }
 
+.footer-social-link svg {
+transition: fill 0.3s ease;
+}
+
+.footer-social-link:hover svg path {
+  fill: #68a2ca;
+}
+
+.footer-social-link:focus svg path {
+  fill: #68a2ca;
+}
+
+.footer-social-link:active svg path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   text-align: center;
-  color: inherit;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -566,13 +580,28 @@ height: 14px;
 
 .htmlacademy-link {
   font-size: 14px;
-  color: #dbb590;
+  color: #000000;
+  transition: all 0.3s ease;
 }
 
-.logo-image {
+ .logo-image {
   width: 115px;
   height: 33px;
 }
+
+.htmlacademy-link:hover {
+  color: #756157;
+}
+
+.htmlacademy-link:focus {
+  color: #756157;
+}
+
+.htmlacademy-link:active {
+  color: rgba(117, 97, 87, 0.3);
+  transform: scale(0.98);
+}
+
 
 /*catalog*/
 
@@ -739,7 +768,7 @@ color: rgba(255, 255, 255, 0,6);
  grid-template-columns: repeat(3, 48px);
 }
 
-.icons-list-use-button {
+.icons-list-button {
   width: 48px;
   height: 48px;
   display: block;
@@ -750,16 +779,34 @@ color: rgba(255, 255, 255, 0,6);
   background-position: center;
 }
 
-.icons-list-use-button-view-tile {
+.icons-list-button:hover {
+  background-color: #e0e0e0;
+  border-color: #000000;
+}
+
+.icons-list-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+  background-color: #d0d0d0;
+  border: #83b3d3
+}
+
+  .icons-list-button:active {
+    background-color: #c0c0c0;
+    border-color: #000000;
+    transform: scale(0.98);
+  }
+
+.icons-list-button-v-tile {
   background-image: url("../images/icons/view-1.svg");
   border-color: #000000;
 }
 
-.icons-list-use-button-view-card {
+.icons-list-button-v-card {
   background-image: url("../images/icons/view-2.svg");
 }
 
-.icons-list-use-button-view-list {
+.icons-list-button-v-list {
   background-image: url("../images/icons/view-3.svg");
 }
 
@@ -913,7 +960,7 @@ color: rgba(255, 255, 255, 0,6);
   padding: 0;
 }
 
-.hotel-card-stars-count-4 .star-icon:not(:nth-child(-n + 5)),
+.hotel-card-stars-count-5 .star-icon:not(:nth-child(-n + 5)),
 .hotel-card-stars-count-4 .star-icon:not(:nth-child(-n + 4)),
 .hotel-card-stars-count-3 .star-icon:not(:nth-child(-n + 3)),
 .hotel-card-stars-count-2 .star-icon:not(:nth-child(-n + 2)),
@@ -1000,30 +1047,26 @@ color: rgba(255, 255, 255, 0,6);
 }
 
 .pagination-link {
-  color: #ffffff;
-  background-color: #68a2ca;
-  text-decoration: none;
-  line-height: 36px;
-  font-weight: 700;
-  font-size: 20px;
-  min-width: 60px;
-  height: 60px;
   display: block;
-  box-sizing: border-box;
+  min-width: 60px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.8;
+  text-decoration: none;
   text-align: center;
-  padding: 11px 18px;
+  color: #ffffff;
+  background-color: #82b3d3;
   border-radius: 4px;
 }
 
-.pagination-link,
 .pagination-link:hover,
-.pagination-link:focus,
-.pagination-link:active {
-  background-color: #82b3d3;
+.pagination-link:focus {
+  background-color: #68a2ca;
 }
 
-.pagination-link:focus .pagination-text {
-  opacity: 0.3;
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
@@ -1032,6 +1075,7 @@ color: rgba(255, 255, 255, 0,6);
   display: block;
   color: #000000;
   background-color: #f2f2f2;
+  pointer-events: none;
 }
 
 .pagination-ellipses {
