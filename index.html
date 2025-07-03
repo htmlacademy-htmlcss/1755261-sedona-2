@@ -167,4 +167,72 @@
         </a>
     </footer>
     </div>
+
+    <div class="modal">
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <button type="button" class="modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
+        <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
+
+        <div class="modal-form-inner">
+     <label class="modal-form-field">
+          <strong class="modal-form-field-title">Дата Заезда:</strong>
+          <input class="modal-field-input" name="auth-date-in" type="text" placeholder="Введите дату выезда" value="27 апреля 2020" required>
+          <span class="modal-field-warn-text error">Мы не можем отправить вас в прошлое</span>
+     </label>
+
+      <label class="modal-form-field">
+                <strong class="modal-form-field-title" for="auth-date-out">Дата Выезда:</strong>
+                <input class="modal-field-input" name="auth-date-out" type="text" placeholder="Введите дату выезда" value="1 сентября 2021" required>
+                <span class="modal-field-warn-text">На эти даты есть свободные номера. Пока есть.</span>
+                </label>
+
+            <fieldset class="modal-form-fieldset modal-form-fieldset-counters">
+              <legend class="visually-hidden">Дополнительная информация</legend>
+
+              <div class="modal-form-counter-container">
+                <label class="modal-form-fieldset-title" for="additional-info-adults">Взрослые:</label>
+
+                <div class="modal-form-counter-field">
+                  <button type="button" class="modal-form-counter modal-form-counter-minus" aria-label="Убавить количество взрослых">
+                    <svg class="modal-form-counter-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 2"><path fill="currentColor" d="M0 0v2h14V0H0Z"/></svg>
+                  </button>
+                  <input type="number" class="modal-form-counter-input" id="additional-info-adults" name="additional-info-adults" min="1" value="2" required>
+                  <button type="button" class="modal-form-counter modal-form-counter-plus" aria-label="Прибавить количество взрослых">
+                    <svg class="modal-form-counter-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"><path fill="currentColor" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                  </button>
+                </div>
+              </div>
+
+
+                <div class="modal-form-counter-container">
+                  <div class="modal-form-tooltip-box">
+                  <strong class="modal-form-fieldset-title">Дети:</strong>
+
+                  <div class="tooltip">
+                    <button type="button" class="tooltip-toogle">
+                      <span class="visually-hidden">Информация</span>
+                    </button>
+                    <span class="tooltip-text" aria-label="Открывает расширенную информацию">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                       Дети до 6 лет размещаются бесплатно.</span>
+                  </div>
+                </div>
+
+
+                  <div class="modal-form-counter-field">
+                    <button type="button" class="modal-form-counter modal-form-counter-minus" aria-label="Убавить количество детей"><svg class="modal-form-counter-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 2"><path fill="currentColor" d="M0 0v2h14V0H0Z"/></svg>
+                    </button>
+                    <input type="number" class="modal-form-counter-input" min="0" name="additional-info-adults" value="2">
+                    <button type="button" class="modal-form-counter modal-form-counter-plus" aria-label="Прибавить количество детей"><svg class="modal-form-counter-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"><path fill="currentColor" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+                    </button>
+                  </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <button class="button modal-submit-button button-blue" type="submit" aria-label="Подобрать подходящую гостиницу в Седоне">Найти</button>
+
+      </form>
+    </div>
+
   </body>
