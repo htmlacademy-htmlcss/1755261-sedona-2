@@ -147,10 +147,12 @@
 
         <section class="sorter-hotel-catalog">
           <header class="catalog-header">
-            <h2 class="title-2 title-hotel">Найдено гостиниц:38
+            <h2 class="title-2 title-hotel">Найдено гостиниц: 38
             </h2>
-            <div class="choose">
-              <select class="select-control" aria-label="Сортировка">
+
+            <form class="choose" action="#" method="get" aria-label="Форма сортировки">
+              <label for="sort-select" class="visually-hidden">Сортировка</label>
+              <select id="sort-select" class="select-control" name="sort">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="popular">Сначала популярные</option>
                 <option value="expensive">Сначала дорогие</option>
@@ -172,7 +174,7 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </form>
           </header>
 
           <ul class="hotel-list">
