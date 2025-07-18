@@ -300,7 +300,8 @@ body {
   background-size: 1200px auto, cover;
   background-repeat: no-repeat;
   background-position: center bottom, center;
-  padding: 51px 70px 82px;
+  padding: 45px 70px 82px;
+  padding-bottom: 89px;
 }
 
 .advantages-title {
@@ -331,7 +332,9 @@ body {
 .advantages-img {
   display: inline-block;
   width: 800px;
-  height: 385px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .title-2 {
@@ -511,7 +514,7 @@ body {
 .newsletter-form {
   display: flex;
   justify-content: center;
-  margin: 54px 0;
+  margin-top: 60px;
   border-radius: 4px;
   overflow: hidden;
 }
