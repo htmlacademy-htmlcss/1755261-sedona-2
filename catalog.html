@@ -125,7 +125,7 @@
               method="get"
             >
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Инфраструктура</legend>
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -170,7 +170,7 @@
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья</legend>
+                <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -212,7 +212,7 @@
               </fieldset>
               <div class="catalog-filter-pb">
                 <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Стоимость, Р</legend>
+                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <ul class="catalog-filter-price">
                     <li class="catalog-filter-item">
                       <label for="from" class="input-label"> от </label>
@@ -326,13 +326,13 @@
                     height="212"
                     alt="Пещера на фоне звездного неба"
                   />
-                  <h3 class="hotel-card-title">Amara resort & Spa</h3>
+                  <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 </a>
 
                 <div class="hotel-card-filter">
                   <p class="product-list-filter">
                     <span>Гостиница</span>
-                    <span>от 4000 ₽</span>
+                    <span>От 4000 ₽</span>
                   </p>
 
                   <a
@@ -349,7 +349,7 @@
                     В избранное
                   </button>
                   <div
-                    class="hotel-card-stars-count-4"
+                    class="hotel-card-stars hotel-card-stars-count-4"
                     aria-label="Оценка отеля: 4 звёзды из 5"
                   >
                     <svg
@@ -444,7 +444,7 @@
                 <div class="hotel-card-filter">
                   <p class="product-list-filter">
                     <span>Гостиница</span>
-                    <span>от 5000 ₽</span>
+                    <span>От 5000 ₽</span>
                   </p>
 
                   <a
@@ -461,7 +461,7 @@
                     В избранном
                   </button>
                   <div
-                    class="hotel-card-stars-count-4"
+                    class="hotel-card-stars hotel-card-stars-count-4"
                     aria-label="Оценка отеля: 4 звёзды из 5"
                   >
                     <svg
@@ -551,12 +551,12 @@
                     height="212"
                     alt="Горы на фоне ясного неба"
                   />
-                  <h3 class="hotel-card-title">Desert Quaill Inn</h3>
+                  <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 </a>
                 <div class="hotel-card-filter">
                   <p class="product-list-filter">
                     <span>Гостиница</span>
-                    <span>от 2500 ₽</span>
+                    <span>От 2500 ₽</span>
                   </p>
 
                   <a
@@ -573,7 +573,7 @@
                     В избранное
                   </button>
                   <div
-                    class="hotel-card-stars-count-3"
+                    class="hotel-card-stars hotel-card-stars-count-3"
                     aria-label="Оценка отеля: 3 звёзды из 5"
                   >
                     <svg
@@ -667,7 +667,7 @@
                 <div class="hotel-card-filter">
                   <p class="product-list-filter">
                     <span>Гостиница</span>
-                    <span>от 1500 ₽</span>
+                    <span>От 1500 ₽</span>
                   </p>
 
                   <a
@@ -684,7 +684,7 @@
                     В избранное
                   </button>
                   <div
-                    class="hotel-card-stars-count-2"
+                    class="hotel-card-stars hotel-card-stars-count-2"
                     aria-label="Оценка отеля: 2 звёзды из 5"
                   >
                     <svg
@@ -782,33 +782,36 @@
         </section>
 
         <section class="newsletter newsletter-catalog">
-          <h2 class="title-2 title-search">Подпишитесь на рассылку</h2>
-          <p>
-            Только полезная информация и никакого спама, честное
-            бойскаутское!<br />
-          </p>
-          <form
-            class="newsletter-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label for="newsletter-email" class="visually-hidden">Email</label>
-            <input
-              class="field"
-              placeholder="Ваш e-mail"
-              type="email"
-              name="newsletter-email"
-              id="newsletter-email"
-              required
-            />
-            <button
-              class="button newsletter-button button-blue big"
-              type="submit"
-              value="Подписаться"
+          <div class="section-container newsletter-container">
+            <h2 class="title-2 title-search">Подпишитесь на рассылку</h2>
+            <p class="text-basic newsletter-text">
+              Только полезная информация и никакого спама, <br />честное
+              бойскаутское!
+            </p>
+            <form
+              class="newsletter-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
             >
-              Подписаться
-            </button>
-          </form>
+              <label for="newsletter-email" class="visually-hidden"
+                >Email</label
+              >
+              <input
+                class="field"
+                placeholder="Ваш e-mail"
+                type="email"
+                name="newsletter-email"
+                id="newsletter-email"
+                required
+              />
+              <button
+                class="button newsletter-button button-blue big"
+                type="submit"
+              >
+                Подписаться
+              </button>
+            </form>
+          </div>
         </section>
       </main>
 
