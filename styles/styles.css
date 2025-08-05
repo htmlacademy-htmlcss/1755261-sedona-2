@@ -213,6 +213,7 @@ body {
 }
 
 .header-navigation-link {
+  position: relative;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -226,8 +227,15 @@ body {
   padding: 20px 16px;
 }
 
-.header-navigation-link-active {
-  border-bottom: 2px solid #756257;
+.header-navigation-link-active::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 21px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #756257;
 }
 
 .navigation-user .navigation-link {
@@ -263,7 +271,7 @@ body {
 
 .navigation-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -298,8 +306,8 @@ body {
 }
 
 .intro {
-  min-height: 483px;
-  padding: 49px;
+  min-height: 485px;
+  padding: 51px;
   color: hsl(0, 0%, 100%);
   background-color: #2e7079;
   background-image: url("../images/white-line.svg"),
@@ -957,7 +965,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom, center;
-  padding: 33px 70px 56px;
+  padding: 35px 70px 56px;
   max-width: 1200px;
 }
 
@@ -1066,9 +1074,10 @@ body {
 }
 
 .product-list-filter {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  column-gap: 20px;
   grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -1149,7 +1158,6 @@ body {
 
 .hotel-card-stars {
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 16px;
   gap: 6px;
@@ -1253,6 +1261,7 @@ body {
   padding-bottom: 60px;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   list-style-type: none;
 }
