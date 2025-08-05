@@ -1083,6 +1083,10 @@ body {
   font-size: 18px;
 }
 
+.product-list-filter:last-child {
+  justify-self: end;
+}
+
 .hotel-card-btn {
   display: flex;
   justify-content: center;
