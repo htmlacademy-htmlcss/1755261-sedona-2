@@ -547,6 +547,10 @@ body {
   color: #ffffff;
 }
 
+.newsletter-catalog .newsletter-text {
+  color: #333333;
+}
+
 .newsletter-index {
   background-image: url("../images/subscribe-background.jpg");
   background-color: #2e7079;
