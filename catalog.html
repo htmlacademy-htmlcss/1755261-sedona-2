@@ -8,7 +8,7 @@
 
   <body>
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="logo" href="index.html">
           <img
             src="images/logo-sedona.svg"
@@ -92,7 +92,7 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-inner" data-test="main">
         <section class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -125,6 +125,7 @@
             class="catalog-filter"
             action="https://echo.htmlacademy.ru/"
             method="get"
+            data-test="filter"
           >
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -257,7 +258,7 @@
           </form>
         </section>
 
-        <section class="sorter-hotel-catalog">
+        <section class="sorter-hotel-catalog" data-test="catalog">
           <header class="catalog-header">
             <h2 class="title-2 title-hotel">Найдено гостиниц: 38</h2>
 
@@ -821,7 +822,7 @@
           </ol>
         </section>
 
-        <section class="newsletter newsletter-catalog">
+        <section class="newsletter newsletter-catalog" data-test="subscribe">
           <div class="section-container newsletter-container">
             <h2 class="title-2 title-search">Подпишитесь на рассылку</h2>
             <p class="text-basic newsletter-text">
@@ -856,7 +857,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="#" aria-label="ВКонтакте"
