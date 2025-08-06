@@ -179,7 +179,6 @@ body {
   display: flex;
   align-items: flex-start;
   padding: 0 70px;
-  height: 64px;
 }
 
 .logo {
@@ -280,8 +279,6 @@ body {
 .choose-type {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 268px;
   column-gap: 20px;
 }
 
