@@ -544,6 +544,10 @@ body {
 }
 
 .newsletter-text {
+  color: #ffffff;
+}
+
+.newsletter-catalog .newsletter-text {
   color: #333333;
 }
 
